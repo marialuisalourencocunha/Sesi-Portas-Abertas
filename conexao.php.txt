@@ -1,0 +1,14 @@
+<?php
+$servername = "localhost";
+$database = "veículos";
+$username = "root";
+$password = "senai";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+    die("Falha na Conexão: " . mysqli_connect_error());
+}
+echo "Conecatado com Sucesso !";
+mysqli_close($conn);
+?>
